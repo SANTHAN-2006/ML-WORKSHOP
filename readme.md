@@ -4,10 +4,14 @@
 ## To Create a scatter plot between cylinder vs Co2Emission (green color)
 # Code :
 ```python
+'''
+Developed by : K SANTHAN KUMAR
+Register Number : 212223240065
+'''
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('fuelconsumption.csv')
+df = pd.read_csv('/content/FuelConsumption.csv')
 
 plt.scatter(df['CYLINDERS'], df['CO2EMISSIONS'], color='green')
 plt.xlabel('Cylinders')
@@ -22,10 +26,14 @@ plt.show()
 ## Using scatter plot compare data   cylinder vs Co2Emission and Enginesize Vs Co2Emission using different colors
 # Code :
 ```python
+'''
+Developed by : K SANTHAN KUMAR
+Register Number : 212223240065
+'''
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('fuelconsumption.csv')
+df = pd.read_csv('/content/FuelConsumption.csv')
 
 plt.scatter(df['CYLINDERS'], df['CO2EMISSIONS'], color='blue', label='Cylinder')
 plt.scatter(df['ENGINESIZE'], df['CO2EMISSIONS'], color='red', label='Engine Size')
@@ -42,6 +50,10 @@ plt.show()
 ## Using scatter plot compare data   cylinder vs Co2Emission and Enginesize Vs Co2Emission and FuelConsumption_comb Co2Emission using different colors
 # Code :
 ```python
+'''
+Developed by : K SANTHAN KUMAR
+Register Number : 212223240065
+'''
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -63,6 +75,10 @@ plt.show()
 ## Train your model with independent variable as cylinder and dependent variable as Co2Emission
 # Code :
 ```python
+'''
+Developed by : K SANTHAN KUMAR
+Register Number : 212223240065
+'''
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
@@ -76,13 +92,18 @@ X_train_cylinder, X_test_cylinder, y_train_cylinder, y_test_cylinder = train_tes
 
 model_cylinder = LinearRegression()
 model_cylinder.fit(X_train_cylinder, y_train_cylinder)
+
 ```
 # Output :
-![image](https://github.com/SANTHAN-2006/ML-WORKSHOP/assets/80164014/b817b459-b42c-4ed3-a9f5-a6ca7f67b735)
+![image](https://github.com/SANTHAN-2006/ML-WORKSHOP/assets/80164014/cbf759a5-5a23-4899-a19c-d721d6c811bf)
 ## Objective 5 :
 ## Train another model with independent variable as FuelConsumption_comb and dependent variable as Co2Emission
 # Code :
 ```python
+'''
+Developed by : K SANTHAN KUMAR
+Register Number : 212223240065
+'''
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
@@ -98,12 +119,16 @@ model_fuel = LinearRegression()
 model_fuel.fit(X_train_fuel, y_train_fuel)
 ```
 # Output :
-![image](https://github.com/SANTHAN-2006/ML-WORKSHOP/assets/80164014/63282f27-79b5-4d96-b20e-fe794f09c99d)
+![image](https://github.com/SANTHAN-2006/ML-WORKSHOP/assets/80164014/096561d4-4b43-463d-983f-3063fa69a15f)
 
 ## Objective 6 :
 ## Train your model on different train test ratio and train the models and note down their accuracies
 # Code :
 ```python
+'''
+Developed by : K SANTHAN KUMAR
+Register Number : 212223240065
+'''
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
@@ -131,6 +156,10 @@ for ratio in ratios:
 ```
 # Output :
 ![image](https://github.com/SANTHAN-2006/ML-WORKSHOP/assets/80164014/b26d872c-7671-43c8-bdb4-2362cef0696b)
+# Result: Successfully executed all the programs
+## Programs Developed by : K SANTHAN KUMAR
+## Register Number : 212223240065
+## Dept : AIML
 
 
 
